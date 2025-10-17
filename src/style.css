@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(159, 219, 219);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.weather-app-box {
+  background-color: aliceblue;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
