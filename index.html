@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fasthand&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Rock+Salt&family=Story+Script&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-results">
           <div>
-            <h1 class="weather-app-city" id="city">Chicago</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
               Tuesday, 14:49, scattered clouds <br />
               Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
@@ -36,7 +37,7 @@
           </div>
           <div class="emoji-temp-unit">
             <div class="weather-emoji">🌤️</div>
-            <div class="current-temp">54</div>
+            <div class="current-temp" id="current-temp"></div>
             <div class="temp-unit">°F</div>
           </div>
         </div>
