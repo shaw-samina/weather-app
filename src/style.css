@@ -1,13 +1,76 @@
 body {
-  background-color: rgb(159, 219, 219);
-  font-family: "Bebas Neue", sans-serif;
+  background-color: rgb(189, 218, 218);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .weather-app-box {
   background-color: aliceblue;
-  max-width: 600px;
+  max-width: 500px;
   margin: 40px auto;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-form-input {
+  background-color: rgb(224, 234, 234);
+  border-color: aliceblue;
+  width: 400px;
+  padding: 11px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.search-button {
+  background-color: rgb(104, 209, 209);
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  font-size: 16px;
+  color: azure;
+  margin-left: 5px;
+}
+main {
+  padding: 30px 0px;
+}
+.weather-app-city {
+  margin: 0;
+}
+.emoji-temp-unit {
+  display: flex;
+}
+.weather-emoji {
+  font-size: 35px;
+  padding-top: 7px;
+}
+.current-temp {
+  font-size: 50px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.temp-unit {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.weather-app-details {
+  color: rgb(50, 96, 96);
+}
+.weather-app-details strong {
+  color: rgb(19, 104, 165);
+}
+
+.weather-results {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 1px solid rgb(224, 234, 234);
+  padding: 30px 0 0 0;
+  text-align: center;
+  color: rgb(50, 96, 96);
+  font-size: 14px;
+}
+a {
+  color: rgb(30, 163, 163);
 }
