@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app-box">
@@ -31,8 +31,10 @@
           <div>
             <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              Tuesday, 14:49, scattered clouds <br />
-              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              <span id="day-and-time"></span>, <span id="description"></span>
+              <br />
+              Humidity: <strong><span id="humidity"></span></strong>, Wind:
+              <strong> <span id="windspeed"></span></strong>
             </p>
           </div>
           <div class="emoji-temp-unit">
