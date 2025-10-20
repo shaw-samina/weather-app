@@ -13,6 +13,8 @@ function updateWeather(response) {
   let dayAndTime = document.querySelector("#day-and-time");
   let date = new Date(response.data.time * 1000);
   dayAndTime.innerHTML = formatDate(date);
+  let icon = document.querySelector("#icon");
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-emoji" />`;
 }
 function formatDate(date) {
   let days = [
