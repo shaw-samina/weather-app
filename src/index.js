@@ -49,7 +49,29 @@ function handleSearchSubmit(event) {
   searchCity(enterCityBox.value);
 }
 
+function showForecast() {
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastLoop = "";
+
+  days.forEach(function (day) {
+    forecastLoop =
+      forecastLoop +
+      `
+          <div class="weather-forecast-days">
+            <div class="forecast-day">${day}</div>
+            <div class="forecast-icon">🌤️</div>
+            <div class="forecast-temps">
+              <div class="forecast-temp"><strong>60°</strong></div>
+              <div class="forecast-temp">82°</div>
+            </div>
+          </div>  `;
+  });
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastLoop;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Chicago");
+showForecast();
