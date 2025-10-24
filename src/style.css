@@ -1,13 +1,13 @@
 body {
   background-color: rgb(189, 218, 218);
-  font-family: "PT Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: Thin;
 }
 
 .weather-app-box {
   background-color: aliceblue;
-  max-width: 500px;
+  max-width: 600px;
   margin: 40px auto;
   padding: 30px;
   border-radius: 10px;
@@ -35,6 +35,9 @@ main {
 }
 .weather-app-city {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: Bold;
 }
 .emoji-temp-unit {
   display: flex;
@@ -42,12 +45,28 @@ main {
 .weather-emoji {
   width: 50px;
   height: 50px;
-  margin-top: 8px;
+  padding-top: 5px;
+  font-size: 5rem;
+  animation: slight-move 2s infinite alternate ease-in-out;
 }
+
+@keyframes slight-move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Move up slightly */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .current-temp {
   font-size: 50px;
   margin-left: 0px;
-  font-weight: bold;
+  font-weight: 600;
+  font-style: bold;
 }
 .temp-unit {
   font-size: 20px;
