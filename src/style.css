@@ -76,9 +76,10 @@ main {
   font-size: 15px;
   line-height: 20px;
 }
-.forecast-icon {
-  font-size: 30px;
-  text-align: center;
+.forecast-icon img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 .forecast-temps {
   text-align: center;
